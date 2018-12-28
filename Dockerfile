@@ -29,6 +29,7 @@ RUN \
     gcc \
     make \
     libc-dev \
-    ncurses-dev
+    ncurses-dev && \
+  rm /usr/bin/qemu-arm-static
 
 CMD ["/usr/bin/dump1090-fa"]
