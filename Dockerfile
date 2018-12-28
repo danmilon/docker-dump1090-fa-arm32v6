@@ -23,6 +23,7 @@ RUN \
   cp view1090 /usr/bin/view1090-fa && \
   rm -rf /build && \
   apk del \
+    --no-cache \
     gcc \
     make \
     libc-dev \
