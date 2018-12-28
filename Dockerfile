@@ -24,6 +24,7 @@ RUN \
   rm -rf /build && \
   apk del \
     --no-cache \
+    --rdepends \
     gcc \
     make \
     libc-dev \
