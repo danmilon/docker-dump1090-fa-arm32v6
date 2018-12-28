@@ -18,9 +18,10 @@ RUN \
     ncurses-dev \
     ncurses-libs && \
   cd /build/dump1090-3.6.3/ && \
-  make BLADERF=no && \
+  make BLADERF=no dump1090 view1090 faup1090 && \
   cp dump1090 /usr/bin/dump1090-fa && \
   cp view1090 /usr/bin/view1090-fa && \
+  cp faup1090 /usr/bin/ && \
   rm -rf /build && \
   apk del \
     --no-cache \
