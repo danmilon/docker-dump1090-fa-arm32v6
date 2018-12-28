@@ -14,7 +14,7 @@ RUN \
     --no-cache \
     make \
     gcc \
-    libc-dev \
+    musl-dev \
     ncurses-dev \
     ncurses-libs && \
   cd /build/dump1090-3.6.3/ && \
